@@ -11,7 +11,7 @@ now = time.strftime("%H:%M:%S")
 def get_all_etapas():
     return jsonify(Modelo=MODELO, Etapas=ETAPAS, Tempo=now)
 
-@app.route('/etapa/<int:id>', methods=['GET'])
+@app.route('/etapas/<int:id>', methods=['GET'])
 def una_etapa(id):
     etapa = ETAPAS.get(id)
     if not etapa:
