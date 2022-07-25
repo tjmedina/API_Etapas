@@ -2,6 +2,7 @@ from flask import Flask, jsonify, abort
 import time
 from model.etapas import MODELO, ETAPAS
 
+
 app = Flask(__name__)
 
 now = time.strftime("%H:%M:%S")
