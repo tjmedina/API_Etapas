@@ -1,11 +1,9 @@
 from flask import Flask, jsonify, abort
 import time
 from model.etapas import MODELO, ETAPAS
-from flask_wtf import CSRFProtect
 
 app = Flask(__name__)
 app.secret_key = 'minha_chave_secreta'
-csrf = CSRFProtect(app)
 
 now = time.strftime("%H:%M:%S")
 
