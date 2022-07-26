@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, abort
+from flask import Flask, jsonify
 import time
 from model.etapas import MODELO, ETAPAS
 
@@ -16,15 +16,6 @@ def una_etapa(id):
     if etapa is None:
         return jsonify({'error': 'Esta fase não existe'}), 404
     return jsonify(Modelo=MODELO, Etapa=etapa, Começar=now )
-
-def unaetapa(id):
-    return next((e for e in ETAPAS if e['id'] == id), None)
-
-def etapa_valida(etapa):
-    for key in etapa.keys():
-        if key != 'ETAPA':
-            return False
-    return True
 
 if __name__ == "__main__":
     app.run(debug=True)
