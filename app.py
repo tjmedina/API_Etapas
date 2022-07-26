@@ -3,8 +3,6 @@ import time
 from model.etapas import MODELO, ETAPAS
 
 app = Flask(__name__)
-app.secret_key = 'minha_chave_secreta'
-
 now = time.strftime("%H:%M:%S")
 
 @app.route('/', methods=['GET'])
