@@ -1,0 +1,86 @@
+_id: spc_d7f5061b52ee4719968c92169de015f7
+type: ApiSpec
+parentId: wrk_68c5fdf2889a4424a27a20e66f122cab
+modified: 1658845412065
+created: 1657125340176
+fileName: Modelo
+contents: "openapi: 3.0.0
+
+
+  info:\ 
+
+  \ title: API Etapas
+
+  \ version: 0.0.1
+
+  \ description: Industrial Automation Project Powered for GETTER - Amplified
+  Industry
+
+
+  servers:
+
+  - url: http://localhost:5000/
+
+  \  description: Flask Server
+
+
+  paths:
+
+  \ \"/etapas\":
+
+  \    get:
+
+  \     tags: [\"GET\"]
+
+  \     summary: Pegue a lista de etapas
+
+  \     responses:
+
+  \       \"200\":
+
+  \         description: Tudo estava bom    \ 
+
+  \ \"/etapas/1\":
+
+  \   get:
+
+  \     tags: [\"GET\"]
+
+  \     summary: Pegue o primeiro fase
+
+  \     responses:
+
+  \      \"200\":
+
+  \        description: Tudo estava bom
+
+  \ \"/etapas/2\":
+
+  \   get:
+
+  \     tags: [\"GET\"]
+
+  \     summary: Pegue o segundo estágio
+
+  \     responses:
+
+  \      \"200\":
+
+  \        description: Tudo estava bom
+
+  \ \"/etapas/3\":
+
+  \   get:
+
+  \     tags: [\"GET\"]
+
+  \     summary: Pegue o terceiro estágio
+
+  \     responses:
+
+  \      \"200\":
+
+  \        description: Tudo estava bom
+
+  \ "
+contentType: yaml
