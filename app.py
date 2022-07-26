@@ -5,6 +5,7 @@ from model.etapas import MODELO, ETAPAS
 app = Flask(__name__)
 now = time.strftime("%H:%M:%S")
 
+
 @app.route('/', methods=['GET'])
 @app.route('/etapas', methods=['GET'])
 def get_all_etapas():
